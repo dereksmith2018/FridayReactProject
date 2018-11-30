@@ -26,23 +26,8 @@ class NavBar extends Component {
 export default NavBar;
 // function NavBar(){
 //   var styles = {
-//     borderBottom: '3px solid #dcdcdc',
+//     borderBottom: 'grey',
 
 //   };
-
-//   var stylesRight = {
-//     float: 'right',
-//     position: 'absolute',
-//     right: '20px',
-//     top: '10px',
-//   };
-
-//   return (
-//     <div style={styles}>
-//       <NavBarButton/>
-//       <div style={stylesRight}><NavBarSearch/></div>
-//     </div>
-//   );
-// }
 
 // export default NavBar;

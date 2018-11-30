@@ -10,22 +10,22 @@ class Counter extends Component {
         <div className="col">
           <button
             onClick={() => this.props.onIncrement(this.props.counter)}
-            className="btn btn-secondary btn-sm"
+            className="btn btn-secondary btn-sm m-2"
           >
-            Add
+            Add More Drinks
           </button>
           <button
             onClick={() => this.props.onMinus(this.props.counter)}
             className="btn-secondary btn-sm m-2"
             disabled={this.props.counter.value === 0 ? "disabled" : ""}
           >
-            Minus
+            Minus Drinks From Order
           </button>
           <button
             onClick={() => this.props.onDelete(this.props.counter.id)}
-            className="btn btn-danger btn-sm"
+            className="btn btn-danger btn-sm m-2"
           >
-            Delete
+            Delete Selected Beverage
           </button>
         </div>
       </div>
@@ -39,7 +39,7 @@ class Counter extends Component {
 
   formatCount() {
     const { value } = this.props.counter;
-    return value === 0 ? "Zero" : value;
+    return value === 0 ? "No Drinks =(" : value + " Drink";
   }
 }
 
