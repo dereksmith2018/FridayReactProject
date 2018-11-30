@@ -4,7 +4,7 @@ class NavBar extends Component {
   state = {};
   render() {
     return (
-      <nav className="navbar navbar-light bg-light">
+      <nav styles={background-color: blue} className="navbar navbar-light bg-light">
         <a className="navbar-brand" href="#">
           TapRoom{" "}
           <span className="badge badge-pill badge-secondary">
