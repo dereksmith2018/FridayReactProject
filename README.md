@@ -40,4 +40,4 @@ _There are no known bugs._
 
 \_HTML, JavaScript, REACT
 
-### `Copyright (c) 2018 Derek Smith`
+### Copyright (c) 2018 Derek Smith
