@@ -17,6 +17,7 @@ The user will be able to select a certain drink.
 
 ### `npm install` `npm start`
 
+May need to install these current npm packages- npm i joi-browser@13.4, npm i react-router-dom@4.3.1
 In the terminal, run - npm install and then run npm start.
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
