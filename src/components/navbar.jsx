@@ -1,33 +1,32 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
-class NavBar extends Component {
-  state = {};
-  render() {
-    return (
-      <nav className="navbar navbar-light bg-light">
-        <a className="navbar-brand" href="#">
-          Drinks Selected{" "}
-          <span className="badge badge-pill badge-secondary">
-            {this.props.totalCounters}
-          </span>
-        </a>
-        <h1>TAP ROOM</h1>
-        <a class="navbar-brand" href="#">
-          Total Drinks Purchased{" "}
-          <span className="badge badge-pill badge-secondary">
-            {this.props.onIncrement}
-          </span>
-        </a>
-      </nav>
-    );
-  }
-}
+const NavBar = () => {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <Link className="navbar-brand" to="/">
+        Tap Room
+      </Link>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon" />
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-nav">
+          <NavLink className="nav-item nav-link" to="/drinks/new">
+            Add a Drink
+          </NavLink>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
 export default NavBar;
-// function NavBar(){
-//   var styles = {
-//     borderBottom: 'grey',
-
-//   };
-
-// export default NavBar;
