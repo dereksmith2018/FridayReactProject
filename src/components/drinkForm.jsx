@@ -6,7 +6,7 @@ import { getFlavors } from "../services/flavorService";
 
 class DrinkForm extends Form {
   state = {
-    data: { title: "", flavor: "", numberInStock: "", purchaseCost: "" },
+    data: { title: "", flavorId: "", numberInStock: "", purchaseCost: "" },
     flavors: [],
     errors: {}
   };
@@ -14,22 +14,22 @@ class DrinkForm extends Form {
   schema = {
     _id: Joi.string(),
     title: Joi.string()
-      .required()
+      // .required()
       .label("Brand Title"),
-    flavor: Joi.string()
-      .required()
+    flavorId: Joi.string()
+      // .required()
       .label("Type of Liquor"),
     numberInStock: Joi.number()
 
       .min(0)
       .max(10)
-      .required()
+      // .required()
       .label("Number In Stock"),
     purchaseCost: Joi.number()
 
       .min(0)
       .max(10)
-      .required()
+      // .required()
       .label("Cost")
   };
 

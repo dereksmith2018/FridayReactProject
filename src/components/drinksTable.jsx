@@ -8,9 +8,9 @@ class DrinksTable extends Component {
     {
       path: "title",
       label: "Title",
-      content: drink => <Link to={`/drink/${drink._id}`}>{drink.title}</Link>
+      content: drink => <Link to={`/drinks/${drink._id}`}>{drink.title}</Link>
     },
-    { path: "drinks.name", label: "Flavor" },
+    { path: "flavor.name", label: "Flavor" },
     { path: "numberInStock", label: "Stock" },
     { path: "purchaseCost", label: "Cost" },
     {
