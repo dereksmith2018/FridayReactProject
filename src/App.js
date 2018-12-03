@@ -43,7 +43,25 @@ class App extends Component {
   };
   render() {
     return (
-      <React.Fragment>
+      <div className="bodyImg">
+        <style jsx>{`
+          .bodyImg {
+            background-position: center;
+            background-size: 100%;
+            height: 680px;
+
+            background-image: url(https://www.millercoors.com/sites/millercoors/files/compelling-story/Beer_Bottles_2500x1250px.jpg);
+          }
+        `}</style>
+        <style jsx>{`
+          .bodyImg {
+            background-position: center;
+            background-size: 100%;
+            height: 680px;
+
+            background-image: url(https://www.millercoors.com/sites/millercoors/files/compelling-story/Beer_Bottles_2500x1250px.jpg);
+          }
+        `}</style>
         <NavBar
           totalCounters={
             this.state.counters.filter(count => count.value > 0).length
@@ -59,7 +77,7 @@ class App extends Component {
             onMinus={this.handleMinus}
           />
         </main>
-      </React.Fragment>
+      </div>
     );
   }
 }
